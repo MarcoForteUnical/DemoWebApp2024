@@ -5,33 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6859f96-7a79-40f3-9417-5cb2e7f6d1dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/DemoWebApplicationsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/chisiamo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/css/generico.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/images/fotoristorante.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/js/validateutente.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/static/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dipartimento/demowebapplications/DemoWebApplicationsApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/dipartimento/demowebapplications/DemoWebApplicationsApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/dipartimento/demowebapplications/DemoWebApplicationsApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/ServletUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/servlets/RistorantiServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/model/Ristorante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/ristoranti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/DemoWebApplicationsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/DemoWebApplicationsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dipartimento/demowebapplications/DemoWebApplicationsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dipartimento/demowebapplications/DemoWebApplicationsApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,6 +54,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.DemoWebApp2024Application.executor": "Run",
     "Application.Start.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -79,7 +74,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Start">
@@ -143,7 +142,8 @@
       <workItem from="1729775326011" duration="396000" />
       <workItem from="1729775728298" duration="913000" />
       <workItem from="1729776653056" duration="113000" />
-      <workItem from="1729843547900" duration="305000" />
+      <workItem from="1729843547900" duration="2303000" />
+      <workItem from="1730305611462" duration="1210000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -153,7 +153,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729843616229</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="html, css, javascript">
+      <option name="closed" value="true" />
+      <created>1729843925193</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729843925193</updated>
+    </task>
+    <task id="LOCAL-00003" summary="html, css, javascript">
+      <option name="closed" value="true" />
+      <created>1729843947162</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729843947162</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +178,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="html, css, javascript" />
+    <option name="LAST_COMMIT_MESSAGE" value="html, css, javascript" />
   </component>
 </project>
