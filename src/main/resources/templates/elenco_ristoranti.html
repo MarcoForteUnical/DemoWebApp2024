@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elenco Ristoranti</title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <th>Nome</th>
+      <th>Descrizione</th>
+      <th>Ubicazione</th>
+    </tr>
+    <tr th:each="rist : ${ristoranti}">
+      <td th:text="${rist.nome}"></td>
+      <td th:text="${rist.descrizione}"></td>
+      <td th:text="${rist.ubicazione}"></td>
+    </tr>
+    <!--
+    <tr>
+      <td>Le Casette di Zio Santino</td>
+      <td>Ristorante/Pizzeria</td>
+      <td>Rende</td>
+    </tr>
+    <tr>
+      <td>Fratelli la frode</td>
+      <td>Pizzeria</td>
+      <td>Rende</td>
+    </tr>
+    -->
+  </table>
+
+</body>
+</html>
