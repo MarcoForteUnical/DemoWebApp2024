@@ -9,8 +9,9 @@ function validate(event){
         alert("Manca la chiocciola");
     }
 }
+
 window.addEventListener("load", function(){
-    form = document.getElementById("formSubmit");
+    var form = document.getElementById("formSubmit");
     form.addEventListener("submit", validate);
 });
 

@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6859f96-7a79-40f3-9417-5cb2e7f6d1dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/servlet/ElencoRistoranti.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/servlet/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/model/Ristorante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/elenco_ristoranti.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/loginErrato.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/notAuthorized.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/validateutente.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/validateutente.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/elenco_ristoranti.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/elenco_ristoranti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/validateutente.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/validateutente.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -150,7 +144,8 @@
       <workItem from="1730305611462" duration="1425000" />
       <workItem from="1730307128459" duration="469000" />
       <workItem from="1730374565163" duration="3686000" />
-      <workItem from="1730384131912" duration="835000" />
+      <workItem from="1730384131912" duration="1819000" />
+      <workItem from="1730712661460" duration="2031000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -184,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730307032470</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Introduced MVC with Servlet and Session">
+      <option name="closed" value="true" />
+      <created>1730385072817</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730385072817</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +198,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="html, css, javascript" />
     <MESSAGE value="Preparazione Servlet e Thymeleaf" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparazione Servlet e Thymeleaf" />
+    <MESSAGE value="Introduced MVC with Servlet and Session" />
+    <option name="LAST_COMMIT_MESSAGE" value="Introduced MVC with Servlet and Session" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Elenco Ristoranti</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!--<script language="javascript" src="js/gestisciRistoranti.js" >-->
+  </script>
 </head>
 <body>
   <table border="1">
@@ -29,6 +32,27 @@
     </tr>
     -->
   </table>
+
+  <form>
+    <label for="nome_rist">Nome Ristorante:</label>
+    <input id="nome_rist" type="text" name="nome_ristorante" />
+    <br/>
+    <label for="desc_rist">Descrizione Ristorante:</label>
+    <textarea id="desc_rist" placeholder="Inserisci la descrizione"
+              name="descrizione_ristorante">
+            </textarea>
+    <br/>
+    <label for="ub_ristorante">Ubicazione Ristorante:</label>
+    <select id="ub_ristorante" name="ubicazione_ristorante">
+      <option value="---" selected>---</option>
+      <option value="Rende">Rende</option>
+      <option value="Cosenza">Cosenza</option>
+      <option value="Castrolibero">Castrolibero</option>
+    </select>
+    <br/>
+    <input id="btn_aggiungi" type="button" class="btn btn-success" value="Aggiungi Ristorante alla lista" />
+    <input type="reset" class="btn btn-danger" />
+  </form>
 
 </body>
 </html>
