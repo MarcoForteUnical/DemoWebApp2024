@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6859f96-7a79-40f3-9417-5cb2e7f6d1dc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/GestioneRistorante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/validateutente.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/validateutente.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/elenco_ristoranti.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/elenco_ristoranti.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/validateutente.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/validateutente.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +142,8 @@
       <workItem from="1730307128459" duration="469000" />
       <workItem from="1730374565163" duration="3686000" />
       <workItem from="1730384131912" duration="1819000" />
-      <workItem from="1730712661460" duration="2031000" />
+      <workItem from="1730712661460" duration="2086000" />
+      <workItem from="1730735059501" duration="4710000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -187,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730385072817</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Introducing Rest">
+      <option name="closed" value="true" />
+      <created>1730714733804</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730714733804</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +205,8 @@
     <MESSAGE value="html, css, javascript" />
     <MESSAGE value="Preparazione Servlet e Thymeleaf" />
     <MESSAGE value="Introduced MVC with Servlet and Session" />
-    <option name="LAST_COMMIT_MESSAGE" value="Introduced MVC with Servlet and Session" />
+    <MESSAGE value="Introducing Rest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Introducing Rest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
