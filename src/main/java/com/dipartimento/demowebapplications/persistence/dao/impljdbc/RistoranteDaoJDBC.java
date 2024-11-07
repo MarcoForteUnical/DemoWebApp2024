@@ -54,8 +54,7 @@ public class RistoranteDaoJDBC implements RistoranteDao {
     }
 
     public static void main(String[] args) {
-        Connection conn = DBManager.getInstance().getConnection();
-        RistoranteDao ristoDao = new RistoranteDaoJDBC(conn);
+        RistoranteDao ristoDao = DBManager.getInstance().getRistoranteDao();
         List<Ristorante> ristoranti = ristoDao.findAll();
         for (Ristorante ristorante : ristoranti) {
             System.out.println(ristorante.getNome());

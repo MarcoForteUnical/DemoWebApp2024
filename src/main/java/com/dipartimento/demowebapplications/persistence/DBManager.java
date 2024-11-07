@@ -1,11 +1,18 @@
 package com.dipartimento.demowebapplications.persistence;
 
+import com.dipartimento.demowebapplications.persistence.dao.PiattoDao;
+import com.dipartimento.demowebapplications.persistence.dao.RistoranteDao;
+import com.dipartimento.demowebapplications.persistence.dao.impljdbc.PiattoDaoJDBC;
+import com.dipartimento.demowebapplications.persistence.dao.impljdbc.RistoranteDaoJDBC;
+
 import java.sql.*;
 
 public class DBManager {
     private static DBManager instance = null;
 
     private DBManager(){}
+    private RistoranteDao ristoranteDao = null;
+    private PiattoDao piattoDao = null;
 
     public static DBManager getInstance(){
         if (instance == null){
@@ -34,11 +41,21 @@ public class DBManager {
     public UtenteDao getUtenteDao(){
         return new UtenteDaoPostgres(getConnection());
     }
-
-    public RistoranteDao getRistoranteDao(){
-        return new RistoranteDaoPostgres(getConnection());
-    }
 */
+    public RistoranteDao getRistoranteDao(){
+        if (ristoranteDao == null) {
+            ristoranteDao = new RistoranteDaoJDBC(getConnection());
+        }
+        return  ristoranteDao;
+    }
+
+    public PiattoDao getPiattoDao(){
+        if (piattoDao == null) {
+            piattoDao = new PiattoDaoJDBC(getConnection());
+        }
+        return  piattoDao;
+    }
+
 
 
 
