@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6859f96-7a79-40f3-9417-5cb2e7f6d1dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/gestioneRistoranti.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/persistence/DBManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/persistence/dao/RistoranteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/persistence/dao/impljdbc/RistoranteDaoJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/elenco_ristoranti.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/elenco_ristoranti.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,6 +51,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.DBManager.executor&quot;: &quot;Run&quot;,
     &quot;Application.DemoWebApp2024Application.executor&quot;: &quot;Run&quot;,
     &quot;Application.Start.executor&quot;: &quot;Run&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
@@ -77,7 +81,33 @@
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Start">
+  <component name="RunManager" selected="Application.RistoranteDaoJDBC">
+    <configuration name="DBManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dipartimento.demowebapplications.persistence.DBManager" />
+      <module name="DemoWebApplications" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dipartimento.demowebapplications.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RistoranteDaoJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dipartimento.demowebapplications.persistence.dao.impljdbc.RistoranteDaoJDBC" />
+      <module name="DemoWebApplications" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dipartimento.demowebapplications.persistence.dao.impljdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Start" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.dipartimento.demowebapplications.DemoWebApplicationsApplication" />
       <module name="DemoWebApplications" />
@@ -114,9 +144,17 @@
     </configuration>
     <list>
       <item itemvalue="Application.Start" />
+      <item itemvalue="Application.RistoranteDaoJDBC" />
+      <item itemvalue="Application.DBManager" />
       <item itemvalue="Spring Boot.DemoWebApp2024Application" />
       <item itemvalue="Spring Boot.DemoWebApplicationsApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RistoranteDaoJDBC" />
+        <item itemvalue="Application.DBManager" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -144,7 +182,9 @@
       <workItem from="1730374565163" duration="3686000" />
       <workItem from="1730384131912" duration="1819000" />
       <workItem from="1730712661460" duration="2086000" />
-      <workItem from="1730735059501" duration="6126000" />
+      <workItem from="1730735059501" duration="6140000" />
+      <workItem from="1730916215514" duration="934000" />
+      <workItem from="1730979319662" duration="1746000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -202,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730739949069</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Introducing Rest">
+      <option name="closed" value="true" />
+      <created>1730741325091</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730741325091</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
