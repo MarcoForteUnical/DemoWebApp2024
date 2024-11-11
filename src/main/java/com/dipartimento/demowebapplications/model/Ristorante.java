@@ -1,9 +1,22 @@
 package com.dipartimento.demowebapplications.model;
 
+import lombok.*;
+
+import java.util.List;
+
+
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
 public class Ristorante {
-    private String nome;
-    private String descrizione;
-    private String ubicazione;
+
+    protected String nome;
+    protected String descrizione;
+    protected String ubicazione;
+    protected List<Piatto> piatti;
 
     public String getNome() {
         return nome;
@@ -27,5 +40,14 @@ public class Ristorante {
 
     public void setUbicazione(String ubicazione) {
         this.ubicazione = ubicazione;
+    }
+
+
+    public List<Piatto> getPiatti() {
+        return piatti;
+    }
+
+    public void setPiatti(List<Piatto> piatti) {
+        this.piatti = piatti;
     }
 }

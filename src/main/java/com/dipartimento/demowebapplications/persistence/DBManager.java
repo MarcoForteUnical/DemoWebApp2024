@@ -26,7 +26,7 @@ public class DBManager {
     public Connection getConnection(){
         if (con == null){
             try {
-                con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Ristoranti", "postgres", "postgres");
+                con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Unical", "postgres", "123456");
             } catch (SQLException e) {
                 throw new RuntimeException(e);
             }
