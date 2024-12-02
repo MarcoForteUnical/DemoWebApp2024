@@ -23,3 +23,10 @@ CREATE TABLE ristorante_piatto
 );
 
 
+CREATE TABLE utente
+(
+    username VARCHAR(100),
+    password     VARCHAR(100),
+    role     VARCHAR(20),
+    PRIMARY KEY (username)
+);

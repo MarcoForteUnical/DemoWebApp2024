@@ -3,13 +3,28 @@
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
       <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
       <option name="name" value="libs-release" />
       <option name="url" value="http://jfrog.revelis.eu/artifactory/libs-release" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central_original" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="snapshots" />
       <option name="name" value="libs-snapshot" />
       <option name="url" value="http://jfrog.revelis.eu/artifactory/libs-snapshot" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="EVO2_be_libs" />
+      <option name="name" value="EVO2_be_libs" />
+      <option name="url" value="https://pkgs.dev.azure.com/mforte0344/EVO2/_packaging/EVO2_be_libs/maven/v1" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -20,6 +35,11 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="EVO2_server_lib_saga" />
+      <option name="name" value="EVO2_server_lib_saga" />
+      <option name="url" value="https://pkgs.dev.azure.com/mforte0344/EVO2/_packaging/EVO2_server_lib_saga/maven/v1" />
     </remote-repository>
   </component>
 </project>

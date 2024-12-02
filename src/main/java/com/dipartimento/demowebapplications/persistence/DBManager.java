@@ -1,9 +1,12 @@
 package com.dipartimento.demowebapplications.persistence;
 
+import com.dipartimento.demowebapplications.model.Utente;
 import com.dipartimento.demowebapplications.persistence.dao.PiattoDao;
 import com.dipartimento.demowebapplications.persistence.dao.RistoranteDao;
+import com.dipartimento.demowebapplications.persistence.dao.UserDao;
 import com.dipartimento.demowebapplications.persistence.dao.impljdbc.PiattoDaoJDBC;
 import com.dipartimento.demowebapplications.persistence.dao.impljdbc.RistoranteDaoJDBC;
+import com.dipartimento.demowebapplications.persistence.dao.impljdbc.UserDaoJDBC;
 
 import java.sql.*;
 
@@ -13,6 +16,7 @@ public class DBManager {
     private DBManager(){}
     private RistoranteDao ristoranteDao = null;
     private PiattoDao piattoDao = null;
+    private UserDao userDao = null;
 
     public static DBManager getInstance(){
         if (instance == null){
@@ -56,6 +60,13 @@ public class DBManager {
         return  piattoDao;
     }
 
+
+    public UserDao getUserDao(){
+        if (userDao == null) {
+            userDao = new UserDaoJDBC(getConnection());
+        }
+        return  userDao;
+    }
 
 
 
