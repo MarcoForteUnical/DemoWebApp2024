@@ -41,5 +41,10 @@
       <option name="name" value="EVO2_server_lib_saga" />
       <option name="url" value="https://pkgs.dev.azure.com/mforte0344/EVO2/_packaging/EVO2_server_lib_saga/maven/v1" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="DG2_libs" />
+      <option name="name" value="DG2_libs" />
+      <option name="url" value="https://pkgs.dev.azure.com/mforte0344/EVO2-DataGather2/_packaging/DG2_libs/maven/v1" />
+    </remote-repository>
   </component>
 </project>

@@ -1,17 +1,21 @@
 package com.dipartimento.demowebapplications.config.security;
 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.security.web.authentication.HttpStatusEntryPoint;
+
+import java.io.IOException;
 
 @Configuration
 public class SecurityConfig {
@@ -23,14 +27,15 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/login").permitAll() // Accesso senza autenticazione
                         .requestMatchers("/api/open/**").permitAll() // Accesso senza autenticazione
+                        .requestMatchers("/api/admin/**").hasAnyRole("ADMIN" ) // Accesso senza autenticazione
                         .requestMatchers("/api/auth/**").authenticated() // Richiede autenticazione
                         .anyRequest().authenticated() // Tutte le altre richieste richiedono autenticazione
                 )
                 .exceptionHandling(ex -> ex
                         // Restituisce 401 Unauthorized per richieste non autorizzate
                         .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
-                                // Restituisce 401 Unauthorized per richieste non autorizzate
-//                        .accessDeniedHandler() //TODO to implement if ROLE exists
+                        // Restituisce 403
+                        .accessDeniedHandler(new UnicalAccessDeniedHandler())
                 )
                 .formLogin(form -> form
                         .loginProcessingUrl("/api/login") // Endpoint per il login
@@ -45,18 +50,22 @@ public class SecurityConfig {
         return http.build();
     }
 
-//    @Bean
-//    public UserDetailsService userDetailsService() {
-//        // Utente hard-coded per test
-//        var user = User.withUsername("test_user")
-//                .password(passwordEncoder().encode("123456"))
-//                .roles("USER")
-//                .build();
-//        return new InMemoryUserDetailsManager(user);
-//    }
-
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder(); // Utilizza BCrypt per la codifica delle password
+    }
+
+    private static class UnicalAccessDeniedHandler implements AccessDeniedHandler {
+        @Override
+        public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException accessDeniedException) throws IOException, ServletException {
+
+            System.err.println(
+                    "For user:'"+SecurityUtility.getCurrentUser().getUsername()+"' " +
+                    "for resource:'"+request.getRequestURI()+"'  error:"+accessDeniedException.getMessage());
+
+            response.getWriter().write("Access denied. You do not have permission to access this resource.");
+            response.setStatus(HttpStatus.FORBIDDEN.value());
+
+        }
     }
 }

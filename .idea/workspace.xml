@@ -4,30 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6859f96-7a79-40f3-9417-5cb2e7f6d1dc" name="Changes" comment="Done ristoranteProxy">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/config/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/config/security/SecurityUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/config/security/UnicalUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/UtenteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/model/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/model/Utente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/persistence/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/persistence/dao/impljdbc/UserDaoJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dipartimento/demowebapplications/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="b6859f96-7a79-40f3-9417-5cb2e7f6d1dc" name="Changes" comment="Done auth">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/GoogleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/ddl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/ddl.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/servlet/ElencoRistoranti.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/servlet/LoginServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/persistence/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/persistence/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/config/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/model/UserRole.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,31 +69,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.UserServiceTest.dependencyTest.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.DemoWebApplicationsApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "auth",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/workspaces/Unical/WebApp24_25/DemoWebApp2024",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.UserServiceTest.dependencyTest.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DemoWebApplicationsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;auth&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workspaces/Leshan/leshan&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.dipartimento.demowebapplications.exception" />
@@ -279,7 +263,11 @@
       <workItem from="1732550431373" duration="2603000" />
       <workItem from="1732826448890" duration="5129000" />
       <workItem from="1732873776531" duration="593000" />
-      <workItem from="1733152025252" duration="5854000" />
+      <workItem from="1733152025252" duration="5946000" />
+      <workItem from="1733305397303" duration="70000" />
+      <workItem from="1733685202863" duration="4223000" />
+      <workItem from="1733749579965" duration="3229000" />
+      <workItem from="1733759114041" duration="1710000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -367,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731585997594</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Done auth">
+      <option name="closed" value="true" />
+      <created>1733161345254</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733161345254</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +401,8 @@
     <MESSAGE value="Introducing Rest" />
     <MESSAGE value="Introducing Dao" />
     <MESSAGE value="Done ristoranteProxy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done ristoranteProxy" />
+    <MESSAGE value="Done auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done auth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -414,6 +411,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/servlet/ElencoRistoranti.java</url>
           <line>23</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/config/security/SecurityConfig.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
