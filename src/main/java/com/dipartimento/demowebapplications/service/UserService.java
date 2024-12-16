@@ -46,6 +46,10 @@ import java.util.Optional;
 
         Utente byPrimaryKey = this.userDao.findByPrimaryKey(username);
 
+        if(byPrimaryKey == null) {
+            return Optional.empty();
+        }
+
         return Optional.of(byPrimaryKey);
     }
 }

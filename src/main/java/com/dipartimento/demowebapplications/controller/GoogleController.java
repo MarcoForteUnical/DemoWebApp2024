@@ -1,6 +1,7 @@
 package com.dipartimento.demowebapplications.controller;
 
 
+import com.dipartimento.demowebapplications.config.security.VerifyGoogleTokenService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -26,12 +27,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/open/google-login")
 public class GoogleController {
 
+    private final VerifyGoogleTokenService tokenService;
+
+    public GoogleController(VerifyGoogleTokenService tokenService) {
+        this.tokenService = tokenService;
+    }
+
+    ;
 
 
     @PostMapping
     public ResponseEntity<?> verifyGoogleToken(@RequestBody GoogleTokenRequest request) {
 
         System.out.println(request);
+
+        tokenService.verifyTokenAndSpawnSession(request.getToken());
+
 
         System.out.println(request.token);
 

@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6859f96-7a79-40f3-9417-5cb2e7f6d1dc" name="Changes" comment="Done auth">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/GoogleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="b6859f96-7a79-40f3-9417-5cb2e7f6d1dc" name="Changes" comment="ES 09/12/24">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/config/security/JwtDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/config/security/VerifyGoogleTokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dipartimento/demowebapplications/config/security/JwtDecoderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/config/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/model/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/GoogleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/controller/GoogleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dipartimento/demowebapplications/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +24,8 @@
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -71,6 +71,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JUnit.JwtDecoderTest.decodeJwt.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.UserServiceTest.dependencyTest.executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
@@ -81,6 +82,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;git-widget-placeholder&quot;: &quot;auth&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/workspaces/Leshan/leshan&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -91,6 +93,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -109,6 +112,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dipartimento.demowebapplications.config.security" />
       <recent name="com.dipartimento.demowebapplications.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -164,6 +168,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JwtDecoderTest.decodeJwt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DemoWebApplications" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dipartimento.demowebapplications.config.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dipartimento.demowebapplications.config.security" />
+      <option name="MAIN_CLASS_NAME" value="com.dipartimento.demowebapplications.config.security.JwtDecoderTest" />
+      <option name="METHOD_NAME" value="decodeJwt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceTest.dependencyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DemoWebApplications" />
       <extension name="coverage">
@@ -215,6 +235,7 @@
       <item itemvalue="Application.PiattoDaoJDBC" />
       <item itemvalue="Application.RistoranteDaoJDBC" />
       <item itemvalue="Application.DBManager" />
+      <item itemvalue="JUnit.JwtDecoderTest.decodeJwt" />
       <item itemvalue="JUnit.UserServiceTest.dependencyTest" />
       <item itemvalue="Spring Boot.DemoWebApplicationsApplication" />
       <item itemvalue="Spring Boot.DemoWebApp2024Application" />
@@ -222,6 +243,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JwtDecoderTest.decodeJwt" />
         <item itemvalue="JUnit.UserServiceTest.dependencyTest" />
         <item itemvalue="Application.PiattoDaoJDBC" />
         <item itemvalue="Application.RistoranteDaoJDBC" />
@@ -267,7 +289,9 @@
       <workItem from="1733305397303" duration="70000" />
       <workItem from="1733685202863" duration="4223000" />
       <workItem from="1733749579965" duration="3229000" />
-      <workItem from="1733759114041" duration="1710000" />
+      <workItem from="1733759114041" duration="4380000" />
+      <workItem from="1733826817052" duration="122000" />
+      <workItem from="1734362921532" duration="2310000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -363,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733161345254</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ES 09/12/24">
+      <option name="closed" value="true" />
+      <created>1733762846023</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1733762846023</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +434,8 @@
     <MESSAGE value="Introducing Dao" />
     <MESSAGE value="Done ristoranteProxy" />
     <MESSAGE value="Done auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done auth" />
+    <MESSAGE value="ES 09/12/24" />
+    <option name="LAST_COMMIT_MESSAGE" value="ES 09/12/24" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
